@@ -1,0 +1,32 @@
+:root {
+    --main-bg-color: #2D356E;
+    --secondary-color: #16915A;
+    --text-color: #ccc;
+}
+
+.navbar {
+    background-color: var(--main-bg-color);
+}
+
+.nav-link {
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.logoNavbar {
+    height: 70px;
+}
+
+.nav-link:hover {
+    color: var(--secondary-color);
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: var(--main-bg-color);
+}
