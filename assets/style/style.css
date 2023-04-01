@@ -1,7 +1,7 @@
 :root {
     --main-bg-color: #2D356E;
-    --secondary-color: #16915A;
-    --text-color: #ccc;
+    --secondary-color: #70E000;
+    --text-color: #ffffff;
 }
 
 .bg-custom {
@@ -33,4 +33,35 @@ a {
 
 footer {
     background-color: var(--main-bg-color);
+}
+
+footer h4 {
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+footer p {
+    color: var(--text-color)
+}
+
+footer a {
+    color: var(--text-color);
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer a:hover {
+    color: var(--secondary-color);
+}
+
+.list-inline-item .fab {
+    transition: all 0.3s ease-in-out;
+}
+
+.list-inline-item:hover .fab {
+    transform: scale(1.5);
 }
