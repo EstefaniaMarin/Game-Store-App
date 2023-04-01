@@ -4,6 +4,10 @@
     --text-color: #ccc;
 }
 
+.bg-custom {
+    background-color: var(--main-bg-color);
+
+}
 .navbar {
     background-color: var(--main-bg-color);
 }
