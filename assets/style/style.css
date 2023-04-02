@@ -65,3 +65,7 @@ footer a:hover {
 .list-inline-item:hover .fab {
     transform: scale(1.5);
 }
+
+div#wrapper {
+    margin-top: 3.9rem;
+}
