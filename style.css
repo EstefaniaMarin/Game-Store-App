@@ -4,6 +4,9 @@
     --text-color: #ffffff;
 }
 
+
+/* Navbar */
+
 .navbar {
     background-color: var(--main-bg-color);
 }
@@ -26,6 +29,32 @@ a {
     text-decoration: none;
     cursor: pointer;
 }
+
+
+/* Fin Navbar */
+
+
+/* Main */
+
+
+/* Botón carrito de compras cards */
+
+.btn-primary {
+    background-color: var(--main-bg-color);
+}
+
+.btn-primary:hover {
+    background-color: #006B8E;
+}
+
+
+/* Fin botón carrito de compras cards */
+
+
+/* Fin Main */
+
+
+/* Footer */
 
 footer {
     background-color: var(--main-bg-color);
@@ -61,3 +90,6 @@ footer a:hover {
 .list-inline-item:hover .fab {
     transform: scale(1.5);
 }
+
+
+/* Fin footer */

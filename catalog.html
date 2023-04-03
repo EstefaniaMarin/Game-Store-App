@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>GameHub</title>
+</head>
+
+<body>
+
+
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-sm">
+        <!-- Container wrapper -->
+        <div class="container-fluid">
+            <!-- Toggle button -->
+            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+
+            <!-- Collapsible wrapper -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- Navbar brand -->
+                <a class="navbar-brand mt-2 mt-lg-0" href="#">
+                    <img class="logoNavbar" src="./Logo.jpg" alt="MDB Logo" loading="lazy" />
+                </a>
+                <!-- Left links -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Projects</a>
+                    </li>
+                </ul>
+                <!-- Left links -->
+            </div>
+            <!-- Collapsible wrapper -->
+
+            <!-- Right elements -->
+            <div class="d-flex align-items-center">
+                <!-- Icon -->
+                <a class="link-secondary me-3" href="#">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+
+                <!-- Notifications -->
+                <div class="dropdown">
+                    <a class="link-secondary me-3 dropdown-toggle hidden-arrow" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-bell"></i>
+                        <span class="badge rounded-pill badge-notification bg-danger">1</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+                        <li>
+                            <a class="dropdown-item" href="#">Some news</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Another news</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Avatar -->
+                <div class="dropdown">
+                    <a class="dropdown-toggle d-flex align-items-center hidden-arrow" href="#" id="navbarDropdownMenuAvatar" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="rounded-circle" height="25" alt="Black and White Portrait of a Man" loading="lazy" />
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuAvatar">
+                        <li>
+                            <a class="dropdown-item" href="#">My profile</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Settings</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Right elements -->
+        </div>
+        <!-- Container wrapper -->
+    </nav>
+    <!-- Navbar -->
+
+    <!-- Main -->
+    <main class="container mt-5">
+
+        <!-- Filtros -->
+        <div class="row">
+            <div class="col-md-3">
+                <h4>Filtrar por:</h4>
+                <hr>
+                <h6>Categoría:</h6>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="categoria1">
+                    <label class="form-check-label" for="categoria1">
+                        Categoría 1
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="categoria2">
+                    <label class="form-check-label" for="categoria2">
+                        Categoría 2
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="categoria3">
+                    <label class="form-check-label" for="categoria3">
+                        Categoría 3
+                    </label>
+                </div>
+                <hr>
+                <h6>Precio:</h6>
+                <div class="form-group">
+                    <input type="number" class="form-control" placeholder="Mínimo" min="0">
+                </div>
+                <div class="form-group mt-3">
+                    <input type="number" class="form-control" placeholder="Máximo" min="0">
+                </div>
+                <hr>
+                <h6>Plataforma:</h6>
+                <select class="form-select mb-3" aria-label="Plataforma">
+                    <option selected>Seleccione una plataforma</option>
+                    <option value="ps4">PS4</option>
+                    <option value="xboxone">Xbox One</option>
+                    <option value="nswitch">Nintendo Switch</option>
+                    <option value="pc">PC</option>
+                </select>
+                <hr>
+                <h6>Tipo de juego:</h6>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="tipo-juego" id="fisico" value="fisico">
+                    <label class="form-check-label" for="fisico">
+                        Físico
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="tipo-juego" id="digital" value="digital">
+                    <label class="form-check-label" for="digital">
+                        Digital
+                    </label>
+                </div>
+
+                <hr>
+                <button type="button" class="btn btn-primary">Aplicar filtros</button>
+            </div>
+
+
+
+            <div class="col-md-9">
+                <!-- Cards productos -->
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="https://loremflickr.com/320/240/nintendogame?random=1" class="card-img-top" alt="Videojuego 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Videojuego 1</h5>
+                                <p class="card-text mb-2">Descripción del videojuego 1</p>
+                                <div class="input-group mb-3">
+                                    <button class="btn btn-outline-secondary" type="button" id="button-minus-1">-</button>
+                                    <input type="text" class="form-control" placeholder="Cantidad" aria-label="Cantidad" value="0" id="quantity-1">
+                                    <button class="btn btn-outline-secondary" type="button" id="button-plus-1">+</button>
+                                    <span class="input-group-text">Existencias: <span id="stock-1">10</span></span>
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <button type="button" class="btn btn-primary">
+                                  <i class="fas fa-shopping-cart"></i> Agregar
+                                </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="https://loremflickr.com/320/240/playstationgame?random=2" class="card-img-top" alt="Videojuego 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Videojuego 1</h5>
+                                <p class="card-text mb-2">Descripción del videojuego 1</p>
+                                <div class="input-group mb-3">
+                                    <button class="btn btn-outline-secondary" type="button" id="button-minus-1">-</button>
+                                    <input type="text" class="form-control" placeholder="Cantidad" aria-label="Cantidad" value="0" id="quantity-1">
+                                    <button class="btn btn-outline-secondary" type="button" id="button-plus-1">+</button>
+                                    <span class="input-group-text">Existencias: <span id="stock-1">10</span></span>
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <button type="button" class="btn btn-primary">
+                                  <i class="fas fa-shopping-cart"></i> Agregar
+                                </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="https://loremflickr.com/320/240/xboxgame?random=3" class="card-img-top" alt="Videojuego 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Videojuego 1</h5>
+                                <p class="card-text mb-2">Descripción del videojuego 1</p>
+                                <div class="input-group mb-3">
+                                    <button class="btn btn-outline-secondary" type="button" id="button-minus-1">-</button>
+                                    <input type="text" class="form-control" placeholder="Cantidad" aria-label="Cantidad" value="0" id="quantity-1">
+                                    <button class="btn btn-outline-secondary" type="button" id="button-plus-1">+</button>
+                                    <span class="input-group-text">Existencias: <span id="stock-1">10</span></span>
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <button type="button" class="btn btn-primary">
+                                  <i class="fas fa-shopping-cart"></i> Agregar
+                                </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="https://loremflickr.com/320/240/nintendogame?random=1" class="card-img-top" alt="Videojuego 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Videojuego 1</h5>
+                                <p class="card-text mb-2">Descripción del videojuego 1</p>
+                                <div class="input-group mb-3">
+                                    <button class="btn btn-outline-secondary" type="button" id="button-minus-1">-</button>
+                                    <input type="text" class="form-control" placeholder="Cantidad" aria-label="Cantidad" value="0" id="quantity-1">
+                                    <button class="btn btn-outline-secondary" type="button" id="button-plus-1">+</button>
+                                    <span class="input-group-text">Existencias: <span id="stock-1">10</span></span>
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <button type="button" class="btn btn-primary">
+                                  <i class="fas fa-shopping-cart"></i> Agregar
+                                </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="https://loremflickr.com/320/240/playstationgame?random=2" class="card-img-top" alt="Videojuego 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Videojuego 1</h5>
+                                <p class="card-text mb-2">Descripción del videojuego 1</p>
+                                <div class="input-group mb-3">
+                                    <button class="btn btn-outline-secondary" type="button" id="button-minus-1">-</button>
+                                    <input type="text" class="form-control" placeholder="Cantidad" aria-label="Cantidad" value="0" id="quantity-1">
+                                    <button class="btn btn-outline-secondary" type="button" id="button-plus-1">+</button>
+                                    <span class="input-group-text">Existencias: <span id="stock-1">10</span></span>
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <button type="button" class="btn btn-primary">
+                                  <i class="fas fa-shopping-cart"></i> Agregar
+                                </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="https://loremflickr.com/320/240/xboxgame?random=3" class="card-img-top" alt="Videojuego 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Videojuego 1</h5>
+                                <p class="card-text mb-2">Descripción del videojuego 1</p>
+                                <div class="input-group mb-3">
+                                    <button class="btn btn-outline-secondary" type="button" id="button-minus-1">-</button>
+                                    <input type="text" class="form-control" placeholder="Cantidad" aria-label="Cantidad" value="0" id="quantity-1">
+                                    <button class="btn btn-outline-secondary" type="button" id="button-plus-1">+</button>
+                                    <span class="input-group-text">Existencias: <span id="stock-1">10</span></span>
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <button type="button" class="btn btn-primary">
+                                  <i class="fas fa-shopping-cart"></i> Agregar
+                                </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="https://loremflickr.com/320/240/nintendogame?random=1" class="card-img-top" alt="Videojuego 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Videojuego 1</h5>
+                                <p class="card-text mb-2">Descripción del videojuego 1</p>
+                                <div class="input-group mb-3">
+                                    <button class="btn btn-outline-secondary" type="button" id="button-minus-1">-</button>
+                                    <input type="text" class="form-control" placeholder="Cantidad" aria-label="Cantidad" value="0" id="quantity-1">
+                                    <button class="btn btn-outline-secondary" type="button" id="button-plus-1">+</button>
+                                    <span class="input-group-text">Existencias: <span id="stock-1">10</span></span>
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <button type="button" class="btn btn-primary">
+                                  <i class="fas fa-shopping-cart"></i> Agregar
+                                </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="https://loremflickr.com/320/240/playstationgame?random=2" class="card-img-top" alt="Videojuego 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Videojuego 1</h5>
+                                <p class="card-text mb-2">Descripción del videojuego 1</p>
+                                <div class="input-group mb-3">
+                                    <button class="btn btn-outline-secondary" type="button" id="button-minus-1">-</button>
+                                    <input type="text" class="form-control" placeholder="Cantidad" aria-label="Cantidad" value="0" id="quantity-1">
+                                    <button class="btn btn-outline-secondary" type="button" id="button-plus-1">+</button>
+                                    <span class="input-group-text">Existencias: <span id="stock-1">10</span></span>
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <button type="button" class="btn btn-primary">
+                                  <i class="fas fa-shopping-cart"></i> Agregar
+                                </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="https://loremflickr.com/320/240/xboxgame?random=3" class="card-img-top" alt="Videojuego 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Videojuego 1</h5>
+                                <p class="card-text mb-2">Descripción del videojuego 1</p>
+                                <div class="input-group mb-3">
+                                    <button class="btn btn-outline-secondary" type="button" id="button-minus-1">-</button>
+                                    <input type="text" class="form-control" placeholder="Cantidad" aria-label="Cantidad" value="0" id="quantity-1">
+                                    <button class="btn btn-outline-secondary" type="button" id="button-plus-1">+</button>
+                                    <span class="input-group-text">Existencias: <span id="stock-1">10</span></span>
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <button type="button" class="btn btn-primary">
+                                  <i class="fas fa-shopping-cart"></i> Agregar
+                                </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Filtros -->
+
+    </main>
+
+    <!-- Main -->
+
+
+    <!-- Footer -->
+    <footer class="py-3">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4">Redes sociales</h4>
+                    <ul class="list-inline">
+                        <li class="list-inline-item my-3">
+                            <a href="#" class=" ">
+                                <i class="fab fa-facebook fa-lg"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item my-3">
+                            <a href="#" class=" ">
+                                <i class="fab fa-twitter fa-lg"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item my-3">
+                            <a href="#" class=" ">
+                                <i class="fab fa-instagram fa-lg"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item my-3">
+                            <a href="#" class=" ">
+                                <i class="fab fa-linkedin fa-lg"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <h4 class="text-uppercase mb-4">Contacto</h4>
+                    <p class="  mb-3"><i class="fas fa-envelope mr-2"></i> info@example.com</p>
+                    <p class="  mb-0"><i class="fas fa-phone mr-2"></i> +1 (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="text-center mt-5 mb-0">
+                <p> © 2023 grupo 3 - Robert Gonzáles | Estefanía Marín | Andy Campo | Andrés Gonzáles - Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer -->
+
+
+    <!-- Bootstrap bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-7zvbLhIaKjX9sWZQ2ffZfSaIHFL4/4H4jKkVP1eGg/6lNvfnX9NlJGdOQRjB2rZ5" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.2/dist/umd/popper.min.js" integrity="sha384-q9CRHqZndzlxGLOj+xrdLDJa9ittGte1NksRmgJKeCV9DrM7Kz868XYqsKWPpAmn" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
