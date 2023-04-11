@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>After 10</title>
+    <title>Store</title>
     <script src="https://kit.fontawesome.com/df59baf6b8.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -12,72 +13,74 @@
     <script defer src="../lib/stock.js"></script>
     <script defer src="../lib/modal.js"></script>
     <script defer src="../lib/app.js"></script>
-      <!-- Required meta tags -->
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <!-- Favicon-->
-      <link rel="icon" type="image/x-icon" href="../assets/img/Logo.jpg" />
-  
-      <!-- Bootstrap CSS -->
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
-      <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-      <!-- Bootstrap Icons -->
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-  
-      <!-- Custom Css Styles -->
-      <link rel="stylesheet" href="../assets/style/template.css">
-      <link rel="stylesheet" href="../assets/style/style.css">
-      <link rel="stylesheet" href="./assets/style/carrito.css">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="../assets/img/Logo.jpg" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <!-- Custom Css Styles -->
+    <link rel="stylesheet" href="../assets/style/template.css">
+    <link rel="stylesheet" href="../assets/style/style.css">
+    <link rel="stylesheet" href="./assets/style/carrito.css">
     <!-- Custom Css Styles carrito -->
-      <link rel="stylesheet" href="./assets/style/style_carrito.css">
-      <!-- Custom JS Styles carrito -->
-      <script src="./lib/carrito.js"></script>
-  
-      <!-- Title Page-->
-      <title>GameHub</title>
+    <link rel="stylesheet" href="./assets/style/style_carrito.css">
+    <!-- Custom JS Styles carrito -->
+    <script src="./lib/carrito.js"></script>
+
+    <!-- Title Page-->
+    <title>GameHub</title>
 </head>
+
 <body>
     <header>
-               <!-- Page content wrapper-->
+        <!-- Page content wrapper-->
 
-               <div id="page-content-wrapper" class="text-light">
-                <!-- Top navigation-->
-                <nav class="navbar fixed-top background navbar-expand-sm">
-                    <!-- Container wrapper -->
-                    <div class="container-fluid">
-                        <!-- Toggle button -->
-                        <button class="btn btn-primary bg-light" id="sidebarToggle"><i
-                                class="bi bi-list fa-1x text-dark"></i></button>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation"><span
-                                class="navbar-toggler-icon"></span></button>
-                        <!-- Collapsible wrapper -->
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <!-- Navbar brand -->
-    
-                            <!-- Left links -->
-                            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Platforms</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Store</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">About Us</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Contact</a>
-                                </li>
-                            </ul>
-                            <button id="boton-carrito"><i class="fas fa-shopping-cart"></i><span id="contadorCarrito">0</span></button>
-                            <div class="d-flex align-items-center">
-                    </nav>
+        <div id="page-content-wrapper" class="text-light">
+            <!-- Top navigation-->
+            <nav class="navbar fixed-top background navbar-expand-sm">
+                <!-- Container wrapper -->
+                <div class="container-fluid">
+                    <!-- Toggle button -->
+                    <button class="btn btn-primary bg-light" id="sidebarToggle"><i
+                            class="bi bi-list fa-1x text-dark"></i></button>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation"><span
+                            class="navbar-toggler-icon"></span></button>
+                    <!-- Collapsible wrapper -->
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <!-- Navbar brand -->
+
+                        <!-- Left links -->
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Platforms</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Store</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                        <button id="boton-carrito"><i class="fas fa-shopping-cart"></i><span
+                                id="contadorCarrito">0</span></button>
+                        <div class="d-flex align-items-center">
+            </nav>
     </header>
 
 
@@ -88,7 +91,7 @@
             <option value="Xbox">Xbox</option>
             <option value="nintendo">nintendo</option>
         </select>
-      </div>
+    </div>
 
     <main id="contenedor-productos" class="pt-5">
         <div class="modal-contenedor">
@@ -107,149 +110,141 @@
             </div>
         </div>
     </main>
-                      <!-- Footer -->
-                      <footer class="text-center text-white">
-                        <!-- Grid container -->
-                        <div class="container">
-                            <!-- Section: Links -->
-                            <section class="mt-5">
-                                <!-- Grid row-->
-                                <div class="row text-center d-flex justify-content-center pt-5">
-                                    <!-- Grid column -->
-                                    <div class="col-md-2">
-                                        <h6 class="text-uppercase font-weight-bold">
-                                            <a href="#!" class="text-white">About us</a>
-                                        </h6>
-                                    </div>
-                                    <!-- Grid column -->
+    <!-- Footer -->
+    <footer class="text-center text-white">
+        <!-- Grid container -->
+        <div class="container">
+            <!-- Section: Links -->
+            <section class="mt-5">
+                <!-- Grid row-->
+                <div class="row text-center d-flex justify-content-center pt-5">
+                    <!-- Grid column -->
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="#!" class="text-white">About us</a>
+                        </h6>
+                    </div>
+                    <!-- Grid column -->
 
-                                    <!-- Grid column -->
-                                    <div class="col-md-2">
-                                        <h6 class="text-uppercase font-weight-bold">
-                                            <a href="#!" class="text-white">Store</a>
-                                        </h6>
-                                    </div>
-                                    <!-- Grid column -->
+                    <!-- Grid column -->
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="#!" class="text-white">Store</a>
+                        </h6>
+                    </div>
+                    <!-- Grid column -->
 
-                                    <!-- Grid column -->
-                                    <div class="col-md-2">
-                                        <h6 class="text-uppercase font-weight-bold">
-                                            <a href="#!" class="text-white">Awards</a>
-                                        </h6>
-                                    </div>
-                                    <!-- Grid column -->
+                    <!-- Grid column -->
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="#!" class="text-white">Awards</a>
+                        </h6>
+                    </div>
+                    <!-- Grid column -->
 
-                                    <!-- Grid column -->
-                                    <div class="col-md-2">
-                                        <h6 class="text-uppercase font-weight-bold">
-                                            <a href="#!" class="text-white">Help</a>
-                                        </h6>
-                                    </div>
-                                    <!-- Grid column -->
+                    <!-- Grid column -->
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="#!" class="text-white">Help</a>
+                        </h6>
+                    </div>
+                    <!-- Grid column -->
 
-                                    <!-- Grid column -->
-                                    <div class="col-md-2">
-                                        <h6 class="text-uppercase font-weight-bold">
-                                            <a href="#!" class="text-white">Contact</a>
-                                        </h6>
-                                    </div>
-                                    <!-- Grid column -->
-                                </div>
-                                <!-- Grid row-->
-                            </section>
-                            <!-- Section: Links -->
-
-                            <hr class="my-5" />
-
-                            <!-- Section: Text -->
-                            <section class="mb-2">
-                                <div class="row d-flex justify-content-center">
-                                    <div class="col-lg-8">
-                                        <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio
-                                            earum
-                                            repellat
-                                            quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
-                                            eum
-                                            harum corrupti
-                                            dicta, aliquam sequi voluptate quas.
-                                        </p>
-                                    </div>
-                                </div>
-                            </section>
-                            <!-- Section: Text -->
-
-                            <!-- Section: Social media -->
-                            <section class="mb-3">
-                                <!-- Facebook -->
-                                <a mdbRipple class="btn btn-primary btn-floating m-1  rounded-circle"
-                                         href="#!" role="button" style="background-color: #3b5998;">
-                                    <i class="bi bi-facebook" aria-hidden="true"></i></a>
-
-                                <!-- Twitter -->
-                                <a mdbRipple class="btn btn-primary btn-floating m-1  rounded-circle"
-                                   href="#!" role="button"  style="background-color: #55acee;"><i
-                                        class="bi bi-twitter"></i></a>
-
-                                <!-- Google -->
-                                <a mdbRipple class="btn btn-primary btn-floating m-1 rounded-circle"
-                                    style="background-color: #dd4b39;" href="#!" role="button"><i
-                                        class="bi bi-google"></i></a>
-
-                                <!-- Instagram -->
-                                <a mdbRipple class="btn btn-primary btn-floating m-1 rounded-circle"
-                                    style="background-color: #ac2bac;" href="#!" role="button"><i
-                                        class="bi bi-instagram"></i></a>
-
-                                <!-- Linkedin -->
-                                <a mdbRipple class="btn btn-primary btn-floating m-1 rounded-circle"
-                                    style="background-color: #0082ca;" href="#!" role="button"><i
-                                        class="bi bi-linkedin"></i></a>
-                                <!-- Github -->
-                                <a mdbRipple class="btn btn-primary btn-floating m-1 rounded-circle"
-                                    style="background-color: #333333;" href="#!" role="button"><i
-                                        class="bi bi-github"></i></a>
-                            </section>
-                            <!-- Section: Social media -->
-                        </div>
-                        <!-- Grid container -->
-
-                        <!-- Copyright -->
-
-                        <div class="d-flex p-4 justify-content-between"
-                            style="background-color: rgba(0, 0, 0, 0.2)">
-                            <div class="justify-content-end">
-                                © 2020 Copyright:
-                                <a class="text-white" target="_blank" href="GameHub.com">GameHub.com</a>
-                            </div>
-                            <div>
-                                Group Nº3: Robert | Estefanía | Andrés | Andy
-                            </div>
-
-                        </div>
-                        <!-- Copyright -->
-                    </footer>
-                    <!-- Footer -->
-
-
+                    <!-- Grid column -->
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="#!" class="text-white">Contact</a>
+                        </h6>
+                    </div>
+                    <!-- Grid column -->
                 </div>
-            </div>
+                <!-- Grid row-->
+            </section>
+            <!-- Section: Links -->
+
+            <hr class="my-5" />
+
+            <!-- Section: Text -->
+            <section class="mb-2">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-8">
+                        <p>
+                            Nuestra tienda contiene una serie de videojuegos, historietas, libros, y
+                            cortos de ficción histórica. Los videojuegos son de acción-aventura,
+                            sigilo y de mundo abierto. Se diferencian en videojuegos principales
+                            y spin-offs.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <!-- Section: Text -->
+
+            <!-- Section: Social media -->
+            <section class="mb-3">
+                <!-- Facebook -->
+                <a mdbRipple class="btn btn-primary btn-floating m-1  rounded-circle" href="#!" role="button"
+                    style="background-color: #3b5998;">
+                    <i class="bi bi-facebook" aria-hidden="true"></i></a>
+
+                <!-- Twitter -->
+                <a mdbRipple class="btn btn-primary btn-floating m-1  rounded-circle" href="#!" role="button"
+                    style="background-color: #55acee;"><i class="bi bi-twitter"></i></a>
+
+                <!-- Google -->
+                <a mdbRipple class="btn btn-primary btn-floating m-1 rounded-circle" style="background-color: #dd4b39;"
+                    href="#!" role="button"><i class="bi bi-google"></i></a>
+
+                <!-- Instagram -->
+                <a mdbRipple class="btn btn-primary btn-floating m-1 rounded-circle" style="background-color: #ac2bac;"
+                    href="#!" role="button"><i class="bi bi-instagram"></i></a>
+
+                <!-- Linkedin -->
+                <a mdbRipple class="btn btn-primary btn-floating m-1 rounded-circle" style="background-color: #0082ca;"
+                    href="#!" role="button"><i class="bi bi-linkedin"></i></a>
+                <!-- Github -->
+                <a mdbRipple class="btn btn-primary btn-floating m-1 rounded-circle" style="background-color: #333333;"
+                    href="#!" role="button"><i class="bi bi-github"></i></a>
+            </section>
+            <!-- Section: Social media -->
         </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+
+        <div class="d-flex p-4 justify-content-between" style="background-color: rgba(0, 0, 0, 0.2)">
+            <div class="justify-content-end">
+                © 2020 Copyright:
+                <a class="text-white" target="_blank" href="GameHub.com">GameHub.com</a>
+            </div>
+            <div>
+                Group Nº3: Robert | Estefanía | Andrés | Andy
+            </div>
+
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
 
 
-        <!-- Bootstrap core JS-->
+    </div>
+    </div>
+    </div>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
-            crossorigin="anonymous"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-        <script>
-            $(function () {
-                $('[data-toggle="tooltip"]').tooltip();
-            });
-        </script>
 
-        <script src="../lib/toggled.js"></script>
+    <!-- Bootstrap core JS-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+
+    <script src="../lib/toggled.js"></script>
 
 </body>
+
 </html>
